@@ -1,3 +1,12 @@
+-- 기본 -- 
+
+h,w,n,m = map(int, input().split())
+a = (h-1) // (n+1) +1
+b = (w-1) // (m+1) +1
+print(a*b)
+
+-- ceil 사용 시 -- 
+
 from math import ceil
 h,w,n,m = map(int, input().split())
 a = ceil(h/(n+1))
